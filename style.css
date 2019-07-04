@@ -256,14 +256,14 @@ img {
       width: 16px;
       height: 16px; }
     .post__meta-item--date::before {
-      background: url("../img/css_sprites.png") -10px -10px; }
+      background: url("./img/css_sprites.png") -10px -10px; }
     .post__meta-item--rating::before {
-      background: url("../img/css_sprites.png") -10px -46px; }
+      background: url("./img/css_sprites.png") -10px -46px; }
     .post__meta-item--comments {
       color: currentColor;
       text-decoration: none; }
       .post__meta-item--comments::before {
-        background: url("../img/css_sprites.png") -46px -10px; }
+        background: url("./img/css_sprites.png") -46px -10px; }
   .post__image-wrapper {
     overflow: hidden; }
   .post__image {
