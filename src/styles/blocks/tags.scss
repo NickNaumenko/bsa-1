@@ -1,0 +1,10 @@
+.tags {
+  @include list-style-reset;
+
+  padding: 2em 0;
+  text-align: center;
+
+  li {
+    display: inline;
+  }
+}

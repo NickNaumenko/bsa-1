@@ -1,0 +1,14 @@
+.content-list {
+    display: grid;
+    grid-row-gap: 30px;
+
+    li {
+      display: flex;
+    }
+
+  @media (min-width: $lg) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-gap: 50px 20px;
+  }
+}

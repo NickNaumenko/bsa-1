@@ -1,0 +1,18 @@
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'common';
+
+@import './blocks/page';
+@import './blocks/socials';
+@import './blocks/header';
+@import './blocks/menu';
+@import './blocks/content.scss';
+@import './blocks/post.scss';
+@import './blocks/about.scss';
+@import './blocks/subscribe.scss';
+@import './blocks/search-button.scss';
+@import './blocks/search.scss';
+@import './blocks/tags.scss';
+@import './blocks/comments';
+@import './blocks/footer.scss';

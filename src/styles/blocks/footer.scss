@@ -1,0 +1,13 @@
+.footer {
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  &__logo {
+    width: 40px;
+  }
+}

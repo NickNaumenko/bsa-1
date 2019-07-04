@@ -1,0 +1,21 @@
+{
+  "name": "lection_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build",
+    "start": "npm run build && gulp server"
+  },
+  "author": "Mykola Naumenko",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
+  }
+}

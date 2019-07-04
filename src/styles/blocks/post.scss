@@ -1,0 +1,81 @@
+.post {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    font-size: 24px;
+    line-height: 1.25em;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__meta {
+    margin-top: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__meta-item {
+    position: relative;
+    margin-right: 20px;
+    padding-left: 23px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 16px;
+      height: 16px;
+    }
+
+    &--date {
+      &::before {
+        background: url('../img/css_sprites.png') -10px -10px;
+      }
+    }
+
+    &--rating {
+      &::before {
+        background: url('../img/css_sprites.png') -10px -46px;
+      }
+    }
+
+    &--comments {
+      color: currentColor;
+      text-decoration: none;
+      
+      &::before {
+        background: url('../img/css_sprites.png') -46px -10px;
+      }
+    }
+  }
+
+  &__image-wrapper {
+    overflow: hidden;
+  }
+
+  &__image {
+    display: block;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__description {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  @media (min-width: $lg) {
+    &__title {
+      min-height: 3em;
+    }
+  }
+}
