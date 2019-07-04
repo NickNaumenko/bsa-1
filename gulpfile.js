@@ -5,6 +5,7 @@ const rename = require("gulp-rename");
 const imagemin = require('gulp-imagemin');
 const plumber = require('gulp-plumber');
 const browserSync = require('browser-sync').create();
+const ghPages = require('gulp-gh-pages');
 
 const paths = {
   dirs: {
@@ -75,3 +76,8 @@ gulp.task('build', gulp.series(
   'styles',
   'images'
 ));
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
