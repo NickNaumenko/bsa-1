@@ -1,10 +1,12 @@
 .menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   box-sizing: border-box;
   width: 220px;
   height: 100%;
+  padding-top: 50px;
   transform: translateX(-100%);
   background-color: #ffffff;
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -47,6 +49,11 @@
 
   &__toggle-input {
     display: none;
+
+    &:checked~label {
+      position: fixed;
+      z-index: 10;
+    }
 
     &:checked~label>span {
       &:first-child {

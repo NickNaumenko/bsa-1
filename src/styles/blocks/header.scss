@@ -16,13 +16,13 @@
 
   &__toggle {
     grid-row: 1 / 2;
-    justify-self: end;
-    
+    justify-self: start;
   }
 
   &__search {
     grid-row: 1 / 2;
-    justify-self: start;    
+    grid-column: 2;
+    justify-self: end;    
   }
 
   &__socials {
